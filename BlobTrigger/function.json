@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "InputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "example/{name}",
+      "connection": "blobMain"
+    },
+    {
+      "name": "result",
+      "eventHubName": "sample",
+      "type": "eventHub",
+      "direction": "out",
+      "connection": "eventHub"
+    }
+  ]
+}
